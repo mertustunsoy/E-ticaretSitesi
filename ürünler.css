@@ -1,0 +1,144 @@
+.urunler {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    box-sizing: border-box;
+    padding: 15px;
+    
+}
+
+.urunler .urun-sol {
+    width: 60%;
+    /* height: 160px; */
+    max-height: max-content;
+    /* background-color: black; */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+
+
+}
+.urunler .urun-sag {
+    width: 40%;
+    height: max-content;
+    /* background-color: #ccc; */
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 6px;
+}
+
+.urun-sag .urun-sag-1 {
+    /* height: 450px; */
+    /* padding: 8px; */
+    position: relative;
+
+
+}
+
+.urun-sag-1 span {
+    position: absolute;
+    top:5px;
+    right:0;
+    box-sizing: border-box;
+    padding: 2px;
+    background-color: green;
+    font-weight: bolder;
+    color: white;
+    width: 40%;
+    text-align: center;
+}
+.urun-sag-1 {
+    position: absolute;
+}
+.urun-sag .urun-sag-1 img {
+    width: 100%;
+}
+.urun-sol-1 {
+    padding: 8px;
+    position: relative;
+
+}
+.urun-sol-1 span {
+    position: absolute;
+    top:5px;
+    right:0;
+    box-sizing: border-box;
+    padding: 2px;
+    background-color: red;
+    font-weight: bolder;
+    color: white;
+    width: 40%;
+    text-align: center;
+}
+
+.urunler .urun-sol .urun-sol-1 img {
+    width: 100%;
+   
+
+}
+
+/* .urunler .urun-sag-1 img:hover {
+    transform: scale(1.3);
+} */
+
+.urun-sol-1:hover {
+    transform: scale(1.03);
+    transition:0.3s ease-in-out ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.urun-sag-1:hover {
+    transform: scale(1.01);
+    transition:0.3s ease-in-out ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* MEDIA ALANI */
+
+@media (max-width:768px) {
+    .urunler {
+        flex-direction: column;
+    }
+    .urunler .urun-sol{
+        width: 100%;
+        
+    }
+    .urunler .urun-sag{
+        width: 100%;
+
+    }
+    .urun-sol-1:hover {
+        transform: scale(1.03);
+        transition:0.3s ease-in-out ;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .urun-sag-1:hover {
+        transform: scale(1.01);
+        transition:0.3s ease-in-out ;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+}
+
+@media (max-width:868px) {
+    .urunler {
+        flex-direction: column;
+    }
+    .urunler .urun-sol{
+        width: 100%;
+        
+    }
+    .urunler .urun-sag{
+        width: 100%;
+
+    }
+    .urun-sol-1:hover {
+        transform: scale(1.03);
+        transition:0.3s ease-in-out ;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .urun-sag-1:hover {
+        transform: scale(1.01);
+        transition:0.3s ease-in-out ;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+}

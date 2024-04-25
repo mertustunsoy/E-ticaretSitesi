@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    width: 1280px;
+    height: 2080px;
+    /* background-color: #ccc; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+
+}
+
+.container .iletisim {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    font-size: 14px;
+    float: right;
+    margin: 0 18px;
+    padding: 8px;
+}
+.container .tnavbar .navbar li{
+    margin: 4px 8px;
+    /* color: #bbb1b1; */
+
+}
+
+.navbar {
+    display: flex;
+}
+
+.container .navbar li {
+    list-style-type: none;
+    margin: 0 18px;
+}
+
+.container .navbar ul {
+    display: flex;
+}
+
+
+.container .navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 55px;    
+    padding: 8px;
+    align-items: center;
+    /* background-color: #ff0000; */
+}
+
+.container .navbar input {
+    width: 300px;
+    padding: 8px;
+    border-radius: 3px;
+    margin: 0 4px;
+
+}
+
+.container .navbar .logo {
+    font-size: 32px;
+    padding: 8px;
+    background-color: tomato;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+.container .tnavbar .altnavbar ul{
+
+    display: flex;
+    list-style-type: none;
+    
+}
+.container .tnavbar .altnavbar li{
+    margin: 8px auto;
+    height: 30px;
+    box-sizing: border-box;
+
+}
+.container .tnavbar .altnavbar {
+    border-bottom: solid 1px #ccc;
+    padding: 18px;
+    height: 35px;
+}
+.dropdown {
+    display: none;
+}
+.icons {
+    margin-top: 16px;
+    width: 100%;
+    height: 150px;
+    /* background-color: #ccc; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.icons img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    /* margin-left: 20px; */
+    border: solid #ccc;
+    margin: 0 20px;
+}
+
+.icons .shopping {
+    display:flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+
+    
+}
+.icons .shopping p {
+    margin-top: 3px;
+
+    
+}
+.container .trend {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    margin: 18px;
+
+
+}
+
+.container .trend .ikon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    
+    width: 30%;
+    height:60px ;
+    border: solid #ccc;
+    margin: 0 5px;
+    padding: 8px;
+    color: white;
+    border-radius: 6px;
+
+
+
+
+}
+
+
+.container .trend #i1 {
+    background-color: tomato;
+}
+.container .trend #i2 {
+    background-color: tomato;
+}
+.container .trend #i3 {
+    background-color: tomato;
+}
+
+
+/* HOVER ALANI */
+.container .tnavbar .altnavbar li:hover{
+    border-bottom: solid tomato;
+    cursor: pointer;
+}
+.icons img:hover{
+    border: solid tomato;
+    transform: scale(1.1);
+    transition: 0.7s;
+
+
+
+}
+.container .trend .icons:hover {
+    border: tomato;
+    transform: scale(1.02);
+    transition: 0.7s;
+    cursor: pointer;
+
+}
+
+/* MEDİA ALANI */
+
+@media (max-width:880px) {
+    .body {
+        overflow-x:hidden;
+
+
+    }
+
+
+    .container {
+        width: 100%;
+
+    }
+    .container .iletisim {
+        display: none;
+    }
+    .container .tnavbar .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+    .container .altnavbar ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 48px;
+    }
+    .navbar .login {
+        margin-top: 8px;
+
+    }
+    .altnavbar ul li {
+        display: none;
+    }
+
+    .dropbtn{
+        background-color: black;
+        color: white;
+        padding: 16px;
+        box-sizing: border-box;
+        font-size: 1rem;
+        border: none;
+        min-width: 160px;
+        text-align: center;
+    }
+
+    .dropdown {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-top: 8px;
+        
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 100%;
+        /* width: 100%; */
+        z-index: 1;
+    }
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown:hover .dropbtn {
+        background-color: rgb(221, 115, 115);
+        transition:0.5s ;
+    }
+
+    .container .icons {
+        margin-top: 4rem;
+        justify-content: center;
+        /* border: solid #ccc; */
+        width: 100%;
+        height: max-content;
+        padding: 8px;
+        /* background-image: url(/İMG/pngtree-happy-shopping-light-spot-poster-background-image_122448.jpg);
+        background-size: ; */
+        /* background-color: antiquewhite; */
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    }
+    .container .icons #ürün6,#ürün7,#ürün8,#ürün9,#ürün10{
+        display: none;
+
+
+    }
+    .container .trend {
+        display: block;
+        width: 100%;
+        /* padding: 8px; */
+        height: max-content;
+
+        
+    }
+    .container .trend .ikon{
+        width: 100%;
+        font-weight: bolder;
+
+    }
+    /* .container .trend #i2,#i3{
+        background-color: red;
+
+    }
+    .container .trend > #i2,#i3{
+        background-color: red;
+
+    } */
+
+
+    
+
+
+}
+@media (max-width:500px) {
+    
+    .container .icons  #ürün4,#ürün5{
+        display: none;
+        
+    }
+}
+
